@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5216" started-at="2017-03-14T03:50:09Z" finished-at="2017-03-14T03:50:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5216" started-at="2017-03-14T03:50:09Z" finished-at="2017-03-14T03:50:14Z">
+      <class name="com.webdriver.chapter15.TestSeleniumGrid">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.webdriver.chapter15.TestSeleniumGrid@2133c8f8]" name="beforeMethod" is-config="true" duration-ms="2859" started-at="2017-03-14T11:50:09Z" finished-at="2017-03-14T11:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSogouSearch()[pri:0, instance:com.webdriver.chapter15.TestSeleniumGrid@2133c8f8]" name="testSogouSearch" duration-ms="1608" started-at="2017-03-14T11:50:12Z" finished-at="2017-03-14T11:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSogouSearch -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webdriver.chapter15.TestSeleniumGrid@2133c8f8]" name="afterMethod" is-config="true" duration-ms="729" started-at="2017-03-14T11:50:14Z" finished-at="2017-03-14T11:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.webdriver.chapter15.TestSeleniumGrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

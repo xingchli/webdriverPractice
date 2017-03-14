@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 13 10:50:15 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52747 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webdriver.chapter09.MultipleBrowsersWithTestNG.beforeClass()'><b>beforeClass</b><br>Test class: com.webdriver.chapter09.MultipleBrowsersWithTestNG<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ofile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429486	DeferredSave.extensions.json	DEBUG	Write succeeded
+1489373429486	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1489373429487	DeferredSave.extensions.json	DEBUG	Starting timer
+1489373429545	DeferredSave.extensions.json	DEBUG	Starting write
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: http://offlintab.firefoxchina.cn/static/preload.html, line 131: ReferenceError: mozIndexedDB is not defined
+1489373429689	addons.repository	DEBUG	No addons.json found.
+1489373429690	DeferredSave.addons.json	DEBUG	Save changes
+1489373429695	DeferredSave.addons.json	DEBUG	Starting timer
+1489373429883	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1489373429887	DeferredSave.addons.json	DEBUG	Starting write
+1489373429916	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429972	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 415: ReferenceError: CETracking is not defined
+JavaScript error: resource://ntab/Tracking.jsm, line 30: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: chrome://cmtracking/content/dataChoices/overlay-browser.js, line 26: ReferenceError: Application is not defined
+JavaScript error: resource://cmsafeflag/CNSafeBrowsingRegister.jsm, line 156: NS_ERROR_XPC_NOT_ENOUGH_ARGS: Not enough arguments [nsIUrlListManager.registerTable]
+JavaScript error: chrome://cmpfs/content/overlay-pfs.js, line 205: ReferenceError: eventHandler is not defined
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.5
+1489373459121	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1489373459122	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1489373459530	addons.manager	DEBUG	shutdown
+1489373459531	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1489373459531	addons.xpi	DEBUG	shutdown
+1489373459532	addons.xpi-utils	DEBUG	shutdown
+1489373459532	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1489373459533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1489373459537	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1489373459538	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1489373459542	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1489373459547	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1489373459555	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;liuxingchen&apos;, ip: &apos;10.139.162.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.webdriver.chapter09.MultipleBrowsersWithTestNG.beforeClass(MultipleBrowsersWithTestNG.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ofile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429486	DeferredSave.extensions.json	DEBUG	Write succeeded
+1489373429486	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1489373429487	DeferredSave.extensions.json	DEBUG	Starting timer
+1489373429545	DeferredSave.extensions.json	DEBUG	Starting write
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: http://offlintab.firefoxchina.cn/static/preload.html, line 131: ReferenceError: mozIndexedDB is not defined
+1489373429689	addons.repository	DEBUG	No addons.json found.
+1489373429690	DeferredSave.addons.json	DEBUG	Save changes
+1489373429695	DeferredSave.addons.json	DEBUG	Starting timer
+1489373429883	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1489373429887	DeferredSave.addons.json	DEBUG	Starting write
+1489373429916	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429972	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 415: ReferenceError: CETracking is not defined
+JavaScript error: resource://ntab/Tracking.jsm, line 30: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: chrome://cmtracking/content/dataChoices/overlay-browser.js, line 26: ReferenceError: Application is not defined
+JavaScript error: resource://cmsafeflag/CNSafeBrowsingRegister.jsm, line 156: NS_ERROR_XPC_NOT_ENOUGH_ARGS: Not enough arguments [nsIUrlListManager.registerTable]
+JavaScript error: chrome://cmpfs/content/overlay-pfs.js, line 205: ReferenceError: eventHandler is not defined
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.5
+1489373459121	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1489373459122	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1489373459530	addons.manager	DEBUG	shutdown
+1489373459531	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1489373459531	addons.xpi	DEBUG	shutdown
+1489373459532	addons.xpi-utils	DEBUG	shutdown
+1489373459532	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1489373459533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1489373459537	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1489373459538	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1489373459542	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1489373459547	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1489373459555	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 27 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439347485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439347485'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ofile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429486	DeferredSave.extensions.json	DEBUG	Write succeeded
+1489373429486	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1489373429487	DeferredSave.extensions.json	DEBUG	Starting timer
+1489373429545	DeferredSave.extensions.json	DEBUG	Starting write
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: http://offlintab.firefoxchina.cn/static/preload.html, line 131: ReferenceError: mozIndexedDB is not defined
+1489373429689	addons.repository	DEBUG	No addons.json found.
+1489373429690	DeferredSave.addons.json	DEBUG	Save changes
+1489373429695	DeferredSave.addons.json	DEBUG	Starting timer
+1489373429883	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1489373429887	DeferredSave.addons.json	DEBUG	Starting write
+1489373429916	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429972	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 415: ReferenceError: CETracking is not defined
+JavaScript error: resource://ntab/Tracking.jsm, line 30: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: chrome://cmtracking/content/dataChoices/overlay-browser.js, line 26: ReferenceError: Application is not defined
+JavaScript error: resource://cmsafeflag/CNSafeBrowsingRegister.jsm, line 156: NS_ERROR_XPC_NOT_ENOUGH_ARGS: Not enough arguments [nsIUrlListManager.registerTable]
+JavaScript error: chrome://cmpfs/content/overlay-pfs.js, line 205: ReferenceError: eventHandler is not defined
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.5
+1489373459121	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1489373459122	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1489373459530	addons.manager	DEBUG	shutdown
+1489373459531	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1489373459531	addons.xpi	DEBUG	shutdown
+1489373459532	addons.xpi-utils	DEBUG	shutdown
+1489373459532	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1489373459533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1489373459537	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1489373459538	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1489373459542	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1489373459547	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1489373459555	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;liuxingchen&apos;, ip: &apos;10.139.162.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.webdriver.chapter09.MultipleBrowsersWithTestNG.beforeClass(MultipleBrowsersWithTestNG.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ofile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429486	DeferredSave.extensions.json	DEBUG	Write succeeded
+1489373429486	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1489373429487	DeferredSave.extensions.json	DEBUG	Starting timer
+1489373429545	DeferredSave.extensions.json	DEBUG	Starting write
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: http://offlintab.firefoxchina.cn/static/preload.html, line 131: ReferenceError: mozIndexedDB is not defined
+1489373429689	addons.repository	DEBUG	No addons.json found.
+1489373429690	DeferredSave.addons.json	DEBUG	Save changes
+1489373429695	DeferredSave.addons.json	DEBUG	Starting timer
+1489373429883	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1489373429883	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1489373429887	DeferredSave.addons.json	DEBUG	Starting write
+1489373429916	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 126: ReferenceError: CETracking is not defined
+1489373429972	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 415: ReferenceError: CETracking is not defined
+JavaScript error: resource://ntab/Tracking.jsm, line 30: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: file:///C:/Users/LIUXIN~1/AppData/Local/Temp/anonymous5777400406207038523webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js, line 124: ReferenceError: CETracking is not defined
+JavaScript error: chrome://cmtracking/content/dataChoices/overlay-browser.js, line 26: ReferenceError: Application is not defined
+JavaScript error: resource://cmsafeflag/CNSafeBrowsingRegister.jsm, line 156: NS_ERROR_XPC_NOT_ENOUGH_ARGS: Not enough arguments [nsIUrlListManager.registerTable]
+JavaScript error: chrome://cmpfs/content/overlay-pfs.js, line 205: ReferenceError: eventHandler is not defined
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+1489373459120	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.5
+1489373459121	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1489373459122	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1489373459530	addons.manager	DEBUG	shutdown
+1489373459531	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1489373459531	addons.xpi	DEBUG	shutdown
+1489373459532	addons.xpi-utils	DEBUG	shutdown
+1489373459532	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1489373459533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1489373459537	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1489373459538	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1489373459542	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1489373459547	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1489373459555	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 27 more
+</pre></div></td>
+<td>0</td>
+<td>com.webdriver.chapter09.MultipleBrowsersWithTestNG@2f7c7260</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webdriver.chapter09.MultipleBrowsersWithTestNG.afterClass()'><b>afterClass</b><br>Test class: com.webdriver.chapter09.MultipleBrowsersWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.webdriver.chapter09.MultipleBrowsersWithTestNG@2f7c7260</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webdriver.chapter09.MultipleBrowsersWithTestNG.testSogouSearch()'><b>testSogouSearch</b><br>Test class: com.webdriver.chapter09.MultipleBrowsersWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.webdriver.chapter09.MultipleBrowsersWithTestNG@2f7c7260</td></tr>
+</table><p>
+</body>
+</html>
